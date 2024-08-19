@@ -1,0 +1,51 @@
+1.Finding Flags
+crypto{y0ur_f1rst_fl4g}
+
+2.Great Snakes
+Run a python script
+crypto{z3n_0f_pyth0n}
+
+3.ASCII
+Run ASCII.py
+crypto{ASCII_pr1nt4bl3}
+
+4.Hex
+Run Hex.py
+crypto{You_will_be_working_with_hex_strings_a_lot}
+
+5.Base64
+Convert str -> hex -> Base64
+Run Base64.py
+crypto/Base+64+Encoding+is+Web+Safe/
+
+6.Bytes and Big Integers
+Run Bytes and Big Integers.py
+crypto{3nc0d1n6_4ll_7h3_w4y_d0wn}
+
+7. XOR Starter
+crypto{aloha}
+
+8.XOR Properties
+Commutative: A ⊕ B = B ⊕ A
+Associative: A ⊕ (B ⊕ C) = (A ⊕ B) ⊕ C
+Identity: A ⊕ 0 = A
+Self-Inverse: A ⊕ A = 0
+KEY1 = a6c8b6733c9b22de7bc0253266a3867df55acde8635e19c73313
+KEY2 ^ KEY1 = 37dcb292030faa90d07eec17e3b1c6d8daf94c35d4c9191a5e1e
+KEY2 ^ KEY3 = c1545756687e7573db23aa1c3452a098b71a7fbf0fddddde5fc1
+FLAG ^ KEY1 ^ KEY3 ^ KEY2 = 04ee9855208a2cd59091d04767ae47963170d1660df7f56f5faf
+
+KEY1 xor (KEY2 xor KEY1) = KEY1 xor (KEY1 xor KEY2) = (KEY1 xor KEY1) xor KEY2 = 0 xor KEY2 = KEY2
+same, KEY2 xor (KEY2 xor KEY3) = (KEY2 xor KEY2) xor KEY3 = 0 xor KEY3 = KEY3
+->KEY1 xor KEY2 xor KEY3 xor (FLAG xor KEY1 xor KEY3 xor KEY2) = FLAG
+ 
+crypto{x0r_i5_ass0c1at1v3}
+
+
+9.Favorite byte
+Try brute force in range(0, 127)
+crypto{0x10_15_my_f4v0ur173_by7e}
+
+10.You either know, XOR you don't
+i know flag_format = b'crypto{', However, i don't know the secret key. So, i change all off character (a-z) and find the secret key is "y"
+crypto{1f_y0u_Kn0w_En0uGH_y0u_Kn0w_1t_4ll}
