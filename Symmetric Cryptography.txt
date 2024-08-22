@@ -1,0 +1,11 @@
+1. Keyed Permutations
+crypto{bijective}
+
+2.Resisting Bruteforce
+crypto{biclique} 
+
+3.Structure of AES
+def matrix2bytes(matrix: List[List[int]]) -> bytes:
+    """ Converts a 4x4 matrix into a 16-byte array. """
+    return bytes(sum(matrix, []))
+crypto{inmatrix}

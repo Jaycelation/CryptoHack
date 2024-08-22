@@ -1,0 +1,62 @@
+1. Greatest Common Divisor
+calculate gcd(a, b) for a = 66528, b = 52920
+1512
+
+2.Extended GCD
+p⋅u+q⋅v=gcd(p,q) with p = 26513, q = 32321
+u = 10245, v = -8404
+
+3. Modular Arithmetic 1
+11 ≡ x mod 6
+8146798528947 ≡ y mod 17
+x = 5, y = 4
+
+4. Modular Arithmetic 2
+a^(p-1) ≡ 1 mod p <=> a^(p-1) % p = 1
+273246787654^65536 % 65537 = 273246787654^(65537-1) % 65537 = 1
+
+5.Modular Inverting
+3 * d ≡ 1 mod 13
+d = pow(3, -1, 13) = 9
+
+6.Quadratic Residues
+a^2 ≡ x mod p
+-> find pow(a, 2, p) in ints or not
+8
+
+7.Legendre Symbol
+Hard***
+
+8.Modular Square Root
+Hard***
+
+9.Chinese Remainder Theorem
+x ≡ 2 mod 5 (1)
+x ≡ 3 mod 11 (2)
+x ≡ 5 mod 17 (3)
+x ≡ a mod 935 ?
+
+(3): 17*j + 5 = x (*)
+17*j + 5 ≡ 3 mod 11 <-> 17*j + 5 ≡ 14 mod 11
+17*j ≡ 9 mod 11, we have 17 ≡ 6 mod 11
+-> 6j ≡ 9 mod 11 <-> 6k ≡ 1 mod 11 (k=2)
+-> 12j ≡ 18 mod 11
+-> j ≡ 18 mod 11, we have 18 ≡ 7 mod 11
+-> j ≡ 7 mod 11
+
+(*)-> x = 17(11k+7) + 5 = 187*k + 124 (**)
+(1): 187*k + 124 ≡ 2 mod 5
+-> 187*k + 124 ≡ 127 mod 5
+-> 187*k ≡ 3 mod 5
+<-> k ≡ 4 mod 5
+(**)-> x = 187(5i+4) + 124 = 935i + 872
+ANSWER: a = 872
+
+10.Adrien's Signs
+Hard***
+crypto{p4tterns_1n_re5idu3s}
+
+11.Modular Binomials
+facto N -> solve
+
+
