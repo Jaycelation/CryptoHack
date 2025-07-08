@@ -9,3 +9,12 @@ def matrix2bytes(matrix: List[List[int]]) -> bytes:
     """ Converts a 4x4 matrix into a 16-byte array. """
     return bytes(sum(matrix, []))
 crypto{inmatrix}
+
+4. 
+
+5. 
+
+6. 
+
+7. Bringing It All Together
+
